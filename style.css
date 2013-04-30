@@ -1,0 +1,417 @@
+/*
+Theme Name: CSR theme
+Theme URI: http://kaihost.ru
+Author: Karadaras
+Author URI: http://karadaras.com/
+Description: Фирменая тема для компании "Центр Строительных Решений"
+Version: 1.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: csr
+*/
+a { outline:none; }
+a:active { outline:none; }
+a:focus { outline:none; }
+
+body {
+    background: url(img/background.png) repeat-x fixed;
+    font-family: Arial, sans-serif;
+    color: #69635d;
+}
+
+.page {
+    border-top: 1px dashed #c7c7c7;
+}
+
+.page-body {
+    font-size: 18px;
+}
+
+.page-body a {
+    font-size: 18px;
+    text-decoration: none;
+    border-bottom: 1px solid #58a0af;
+    padding-bottom: 1px;
+}
+
+.page-body a:hover {
+    border-color: #474038;
+}
+
+.page-body h1 {
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0px;
+}
+
+.page-body h6 {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-weight: normal;
+    color: #a7a8a8;
+}
+
+.container {
+    width: 940px;
+}
+
+.container .header {
+    margin-top: 32px;
+}
+
+.contact-widget-wrap {
+    text-align: right;
+}
+
+.contact-widget {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    font-size: 24px;
+}
+
+.contact-widget li {
+    padding: 5px 0;
+}
+
+.contact-widget div {
+    display: inline-block;
+}
+
+.contact-widget div > span {
+    font-size: 14px;
+    position: relative;
+    top: -3px;
+}
+
+a {
+    color: #58a0af;
+    text-decoration: underline;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+a:hover {    
+    color: #474038;
+}
+
+a.bordered {
+    text-decoration: none;
+    border-bottom: 1px dashed #58a0af;
+}
+
+a.bordered:hover {
+    border-color: #474038;
+}
+
+.menu-header-container {
+    text-align: center;
+}
+
+.navigation {
+    list-style: none;
+    display: block;
+    padding: 0;
+    margin: 42px auto 0 auto;
+    position: relative;
+    z-index: 10;
+}
+
+.navigation > li {
+    display: inline-block;
+    background-image: url(img/navbar-separator.png), url(img/navbar-background.png);
+    background-repeat: no-repeat, repeat-x;
+    background-position: right, center;
+    margin-left: -4px;
+}
+
+.navigation > li:first-child {
+    margin-left: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px; 
+    padding-left: 10px;
+}
+
+.navigation > li:last-child {
+    background: url(img/navbar-background.png) center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px; 
+    padding-right: 10px;
+}
+
+.navigation > li > a {
+    float: none;
+    padding: 2px 10px 1px 10px;
+    margin: 7px 15px 8px 15px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    background: !important;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.navigation > li.current-menu-item > a,
+.navigation > li.current-page-ancestor > a {
+    background: url(img/navbar-link-hover-background.png);
+}
+
+.navigation > li.current-menu-item > a:hover,
+.navigation > li.current-page-ancestor > a:hover {
+    color: #fff;
+}
+
+.navigation > li > a:hover {
+    color: #223d42;
+}
+
+.navigation-shadow {
+    background: url(img/navbar-shadow.png) center;
+    height: 50px;
+    margin: 0 auto;
+    width: 630px;
+    position: relative;
+    top: -14px;
+}
+
+[class^="icon_contact"],
+[class*=" icon_contact"] {
+    display: inline-block;
+    width: 16px;
+    height: 19px;
+    line-height: 19px;
+    vertical-align: middle;
+    background-image: url("img/contact-icons.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    margin-top: 1px;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    filter: alpha(opacity=60);
+    opacity: 0.6;
+}
+
+.icon_contact-telephone {
+    background-position: 0 0;
+}
+
+.icon_contact-map-point {
+    background-position: -16px 0;
+}
+
+.body {
+    margin-left: 0px;
+}
+
+.body [class*="span"] {
+    margin-left: 0px;
+}
+
+.image-box {
+    padding: 5px;
+}
+
+.image-box .slider-image {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.image-box .image-description {
+    position: absolute;
+    background: rgba(0,0,0,0.4);
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    filter: alpha(opacity=40);
+    width: 460px;
+}
+
+.nivo-caption h1 {
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
+    font-weight: normal;
+    line-height: 1;
+    color: #fff;
+}
+
+.nivo-caption > p p {
+    padding: 0px;
+    font-size: 12px;
+    color: #bdbebe;
+    line-height: 2;
+}
+
+.image-slider-type1 > .nivo-caption {
+    padding: 15px 0;
+    top: 30px;
+    position:absolute;
+    left:0px;
+    background:#000;
+    color:#fff;
+    width:100%;
+    bottom: inherit;
+    z-index:89;
+}
+
+.image-slider-type1 > .nivo-caption p {    
+    font-size: 25px;
+    color: #fff;
+    margin: 10px 0;
+    margin-left: 44px;
+    border-left: 4px solid #58a0af;
+    padding-left: 12px;
+}
+
+.nivoSlider {
+    position:relative;
+    background:url(img/loading.gif) no-repeat 50% 50%;
+}
+.nivoSlider img {
+    position:absolute;
+    top:0px;
+    left:0px;
+    display:none;
+}
+.nivoSlider a {
+    border:0;
+    display:block;
+}
+
+.footer {
+    color: #606060;
+    font-size: 13px;
+    padding-bottom: 20px;
+}
+
+.footer hr {
+    border-top: 1px solid #cfd3d5;
+    border-bottom: 1px solid #f3f5f6;
+}
+
+.page-header {
+    font-size: 24px;
+    border-width: 0;
+    margin: 25px 0 0px;
+}
+
+.page-header h1 {
+    font-size: 24px;
+    color: #58a0af;
+}
+
+.page-header .nav-pills a {
+    color: #69635d;
+}
+
+.page-header .nav-pills .current-menu-item a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #58a0af;
+}
+
+.nav {
+    margin-bottom: 0;
+}
+
+.nav-pills > li:first-child > a {
+    padding-left: 0px;
+}
+.nav>li>a:hover,.nav>li>a:focus{text-decoration:none;background-color: inherit;}
+
+.ngg-galleryoverview {
+    margin-top: 0;
+}
+
+.ngg-gallery-thumbnail {
+    position: relative;
+    text-align: left;
+    margin: 0;
+    padding-top: 15px;
+    float: none;
+}
+
+.ngg-gallery-thumbnail img {
+    background: none;
+    border: 1px solid transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.ngg-gallery-thumbnail img:hover {
+    background-color: inherit;
+}
+
+.ngg-gallery-thumbnail .nivo-caption {
+    display: none;
+    left: 1px;
+    bottom: 1px;
+    width: 100%;
+    padding: 0px;
+    padding-bottom: 4px;
+    background: url(img/background-black-transparent.png);
+}
+
+.ngg-gallery-thumbnail .nivo-caption h1 {
+    font-size: 14px;
+    padding: 4px;
+}
+
+.ngg-gallery-thumbnail .nivo-caption span {
+    font-size: 12px;
+    padding: 0;
+    color: #bdbebe;
+    display: inline;
+}
+
+.ngg-gallery-thumbnail .nivo-caption p {
+    font-size: 12px;
+    padding: 0 4px;
+    line-height: 1;
+    color: #fff;
+}
+
+#shTitleWrap {
+    margin: 0 auto;
+}
+
+div#shDisplay img#shTopImg {
+    border-width: 0;
+    background: inherit;
+    padding: 0;
+}
+
+#shTitle {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+    text-align: left;
+    background-image: url(img/background-black-transparent.png);
+}
+
+#shName {
+    text-align: left;
+    margin-left: 50px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    padding: 10px 0;
+    line-height: 20px;
+    color: #fff;
+}
+
+#shName span {
+    color: #bdbebe;
+    display: inline;
+}
+
+#shName h1 {
+    font-size: 14px;
+    padding: 0;
+    line-height: 25px;
+}
